@@ -22,12 +22,14 @@
         margin-bottom: 20px;
         position: relative;  
     }
+
     .password-login {
         display: flex;
         flex-direction: column;
         margin-bottom: 40px;
         position: relative;
     }
+    
     #padlockIcon{
         position: absolute;
         left: 5px;
