@@ -1,0 +1,29 @@
+@media (max-width: 500px){
+
+    .panel-header{
+        width: 100vh;
+        background: linear-gradient(to right, #61CDFC, #DBF2FF);
+        margin: 0;
+        height: 50px;
+    }
+
+    .panel-main{
+        display: flex;
+        flex-direction: column;
+        background-color: aliceblue;
+    }
+
+    .block-blue{
+      background-color: #61CDFC;
+    }
+    .block-red{
+
+    }
+    .block-green{
+
+    }
+    .block-purple{
+
+    }
+
+}

@@ -1,13 +1,15 @@
 const passwordField = document.getElementById('password'); //Seleciona o campo de entrada de senha
-const togglePasswordButton = document.getElementById('togglePassword'); //seleciona a div 
-const eyeIcon = document.getElementById('eyeIcon'); //seleciona a imagen
+const togglePasswordButton = document.getElementById('togglePassword'); //Seleciona a div
+const eyeIcon = document.getElementById('eyeIcon'); //Seleciona a imagem
 
-//funcao evento  click
-togglePasswordButton.addEventListener('click', function () { //funcao evento  click
-    const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password'; //verifica qual é o atributo type atual do campo de senha, se for password define como texto se não for password define como password 
-    passwordField.setAttribute('type', type);//Este comando altera o atributo type 
-
-    // Toggle the eye icon
-    const icon = type === 'password' ? './img/close-eye.png' : './img/eye.png';//Se type for 'password', ele seleciona a imagem de olho fechado se for text seleciona imagen de olho aberto
-    eyeIcon.setAttribute('src', icon);//Esta linha altera o atributo src 
+// Função para o evento de clique
+togglePasswordButton.addEventListener('click', function () {
+    // Verifica o tipo atual do campo de senha
+    if (passwordField.getAttribute('type') === 'password') {
+        passwordField.setAttribute('type', 'text'); // Altera o tipo para 'text'
+        eyeIcon.setAttribute('src', './img/eye.png'); // Altera a imagem para o olho aberto
+    } else {
+        passwordField.setAttribute('type', 'password'); // Altera o tipo para 'password'
+        eyeIcon.setAttribute('src', './img/close-eye.png'); // Altera a imagem para o olho fechado
+    }
 });
