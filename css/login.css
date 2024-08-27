@@ -1,0 +1,83 @@
+@media (max-width: 500px) {
+
+    .body-login {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /*justify-content: center;*/
+        height: 100vh;
+        width: 100vw;
+        text-align: center;
+    }
+
+    .img-login {
+        max-width: 300px;
+        margin-top: 30px;
+
+    }
+
+    .user-login {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        position: relative;  
+    }
+    .password-login {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+        position: relative;
+    }
+    #padlockIcon{
+        position: absolute;
+        left: 5px;
+        top: 25px;
+    }
+
+    #eyeIcon{
+        position: absolute;
+        right: 10px;
+        top: 25px;
+    }
+
+    .user-login img{
+        position: absolute;
+        left: 5px;
+        top: 25px;
+    }
+
+    input{
+        font-size: 0.9rem;
+        padding: 7px;
+        border: none;
+        border-radius: 10px;
+        background-color: #eeeeee;
+        padding-left: 35px;
+        padding-right: 10px;
+    }
+    form{
+      width: 80%;  
+    }
+
+    label{
+        text-align: left;
+        padding-bottom: 3px;
+    }
+
+    #btnLogin{
+        width: 80%;
+        padding: 10px;
+        margin-bottom: 50px;
+        border-radius: 20px;
+        border: none;
+        font-size: 1.1rem;
+        background-color: #d3d3d3;
+    }
+
+    p a{
+        color: black;
+        text-decoration: none;
+    }
+
+
+}
