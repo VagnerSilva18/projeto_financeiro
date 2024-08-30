@@ -2,28 +2,89 @@
 
     .panel-header{
         width: 100vh;
-        background: linear-gradient(to right, #61CDFC, #DBF2FF);
+        background: linear-gradient(90deg, #61CDFC, #DBF2FF, #DBF2FF);
         margin: 0;
         height: 50px;
+        position: fixed;
+        top: 0;
     }
 
     .panel-main{
         display: flex;
         flex-direction: column;
-        background-color: aliceblue;
+        padding-top: 70px;
+        margin-bottom: 20px;
     }
 
-    .block-blue{
-      background-color: #61CDFC;
+    .block{
+        height: 100px;
+        margin: 10px;
+        border-radius: 30px;
     }
-    .block-red{
 
+    .panel-nome{
+        text-align: left;
+        padding-top: 15px;
+        padding-left: 20px;
+        color: #ffffff;
+        font-size: 17px;
     }
-    .block-green{
 
+    .panel-valor{
+        text-align: left;
+        padding-top: 15px;
+        padding-left: 20px;
+        color: #ffffff;
+        font-size: 23px;
     }
-    .block-purple{
 
+    .panel-valor span{
+        margin-right: 10px;
+    }
+    .block.purple {
+        display: flex;
+        align-items: center;
+    }
+
+    .panel-opcao{
+
+        padding-left: 20px;
+        color: #ffffff;
+        font-size: 23px; 
+    }
+    
+
+    .blue{
+      background: linear-gradient(to right, #2644AE, #86D5F6);
+    }
+    .red{
+      background: linear-gradient(to right, #BA0505, #F99191);
+    }
+    .green{
+      background: linear-gradient(to right, #06741E, #94FD9E);
+    }
+    .purple{
+      background: linear-gradient(to right, #574BE3, #C2BEF8)
+    }
+
+    .panel-footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        background: linear-gradient(90deg, #61CDFC, #DBF2FF, #DBF2FF);
+        margin: 0;
+        height: 56px;
+        position: fixed;
+        bottom: 0px;
+    }
+
+    .img-cadastro{
+        padding-left: 10px;
+    }
+
+    .img-caixa{
+        padding-right: 15px;
     }
 
 }
