@@ -13,3 +13,30 @@ togglePasswordButton.addEventListener('click', function () {
         eyeIcon.setAttribute('src', './img/close-eye.png'); // Altera a imagem para o olho fechado
     }
 });
+
+
+/*
+
+const menu = document.querySelector('.nav-menu');
+const botaoMenu = document.getElementById('btn-menu');
+
+// Função para alternar a abertura/fechamento do menu
+botaoMenu.addEventListener('click', () => {
+  if (menu.classList.contains('open')) {
+    menu.classList.remove('open');
+    botaoMenu.textContent = 'Abrir Menu';
+  } else {
+    menu.classList.add('open');
+    botaoMenu.textContent = 'Fechar Menu';
+  }
+});
+
+*/
+
+
+/*
+//abrir panina principal
+document.getElementById('btnLogin').addEventListener('click', function() {
+    window.location.href = './paginas/panel.html'; // Caminho para a página que será aberta
+});
+*/

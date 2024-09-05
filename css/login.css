@@ -59,6 +59,7 @@
     }
     form{
       width: 80%;  
+      display: grid;
     }
 
     label{
@@ -74,6 +75,8 @@
         border: none;
         font-size: 1.1rem;
         background-color: #d3d3d3;
+
+        justify-self: center;
     }
 
     p a{

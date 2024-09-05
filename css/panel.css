@@ -1,12 +1,25 @@
 @media (max-width: 500px){
 
     .panel-header{
-        width: 100vh;
+        width: 100%;
         background: linear-gradient(90deg, #61CDFC, #DBF2FF, #DBF2FF);
         margin: 0;
         height: 50px;
         position: fixed;
         top: 0;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #btn-menu{
+        padding-left: 20px;
+        cursor: pointer;
+    }
+    .img-refresh{
+        padding-right: 20px;
+        cursor: pointer;
     }
 
     .panel-main{
@@ -14,6 +27,7 @@
         flex-direction: column;
         padding-top: 70px;
         margin-bottom: 20px;
+        display: none;
     }
 
     .block{
@@ -51,6 +65,7 @@
         padding-left: 20px;
         color: #ffffff;
         font-size: 23px; 
+        cursor: pointer;
     }
     
 
@@ -77,6 +92,10 @@
         height: 56px;
         position: fixed;
         bottom: 0px;
+    }
+
+    .panel-footer img{
+        cursor: pointer;
     }
 
     .img-cadastro{
