@@ -1,0 +1,55 @@
+@media(max-width: 500px){
+
+    .header-clientes{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 100%;
+        background: linear-gradient(90deg, #61CDFC, #DBF2FF, #DBF2FF);
+        margin: 0;
+        height: 50px;
+        position: fixed;
+        
+    }
+    .header-clientes img{
+        margin-right: 10px;
+        margin-left: 15px;
+    }
+    .header-clientes p{
+        margin: 0;
+        text-align: center;
+        flex: 1; /* Faz o parágrafo ocupar o espaço restante da div */
+        margin-right: 50px;
+    }
+
+    .flex-clientes{
+        position: absolute;
+        top: 50px;
+        height: calc(100vh - 50px);
+        width: 100vw;
+        background-color: #ffffff;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        
+    }
+
+    .estilo{
+        height: 80px;
+        padding: 10px;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        flex-direction: column;
+        background-color: #ffffff; 
+        border-radius: 15px;
+        box-shadow: 0 4px 8px #00000080;
+        align-items: center;
+        cursor: pointer;
+        margin-top: 35px;
+    }
+    .estilo img{
+        margin: 0 auto;
+    }
+   
+}

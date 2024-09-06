@@ -17,6 +17,7 @@
 
     .nav-menu.open{
         width: 100vw;
+        overflow: auto;
     }
 
     .nav-top{
@@ -38,6 +39,10 @@
     }
     .nav-flex:hover{
         background-color: #7ae0ff77;
+    }
+
+    .exit{
+        margin-bottom: 90px;
     }
 }
 
