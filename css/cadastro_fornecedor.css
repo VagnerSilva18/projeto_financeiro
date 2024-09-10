@@ -1,6 +1,6 @@
 @media(max-width: 500px){
 
-    .header-clientes{
+    .header-forn{
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -13,11 +13,11 @@
         z-index: 1;
         
     }
-    .header-clientes img{
+    .header-forn img{
         margin-right: 10px;
         margin-left: 15px;
     }
-    .header-clientes p{
+    .header-forn p{
         margin: 0;
         text-align: center;
         flex: 1; /* Faz o parágrafo ocupar o espaço restante da div */
@@ -26,7 +26,7 @@
         
     }
 
-    .flex-clientes{
+    .flex-forn{
         padding-top: 80px;
         padding-left: 15px;
         padding-right: 15px;
@@ -37,12 +37,12 @@
         background-color: #ffffff;
         text-align: center; 
     }
-    .flex-clientes a{
+    .flex-forn a{
         text-decoration: none;
         color: black;
     }
 
-    .estilo{
+    .estilo-forn{
         height: 80px;
         min-width: 150px;
         padding: 10px;
@@ -55,7 +55,7 @@
         cursor: pointer;
         font-size: 1.2rem;
     }
-    .estilo img{
+    .estilo-forn img{
         margin: 0 auto;
     }
   
