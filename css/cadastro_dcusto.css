@@ -1,0 +1,63 @@
+@media(max-width: 500px){
+
+    .header-dcusto{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 100%;
+        background: linear-gradient(90deg, #61CDFC, #DBF2FF, #DBF2FF);
+        margin: 0;
+        height: 50px;
+        position: fixed;
+        z-index: 1;
+        
+    }
+    .header-dcusto img{
+        margin-right: 10px;
+        margin-left: 15px;
+    }
+    .header-dcusto p{
+        margin: 0;
+        text-align: center;
+        flex: 1; /* Faz o parágrafo ocupar o espaço restante da div */
+        margin-right: 50px;
+        font-size: 1.2rem;
+        
+    }
+
+    .flex-dcusto{
+        padding-top: 80px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 50px;
+        display: grid;
+        gap: 20px;
+
+        background-color: #ffffff;
+        text-align: center; 
+    }
+    .flex-dcusto a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .estilo-dcusto{
+        height: 80px;
+        min-width: 150px;
+        padding: 10px;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        background-color: #ffffff; 
+        border-radius: 15px;
+        box-shadow: 0 4px 8px #00000080;
+        align-items: center;
+        cursor: pointer;
+        font-size: 1.2rem;
+    }
+    .estilo-dcusto img{
+        margin: 0 auto;
+    }
+  
+   
+}
