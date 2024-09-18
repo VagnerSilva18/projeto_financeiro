@@ -37,11 +37,7 @@
         background-color: #ffffff;
         text-align: center; 
     }
-    .flex-clientes a{
-        text-decoration: none;
-        color: black;
-    }
-
+    
     .estilo{
         height: 80px;
         min-width: 150px;
@@ -58,20 +54,30 @@
     .estilo img{
         margin: 0 auto;
     }
+    
+   /*formulario cadastrar*/
+   #frm-cad-clientes.open{
+    position: absolute;
+    background-color: #ffffff;
+    top: 50px;
+    height: calc(100% - 50px);
+    width: 100%; 
+    transition: 0.5s;
 
-    /*formulario cadastrar*/
-    #btn-dados-clientes, #btn-doc-clientes, #btn-end-clientes{
-        padding: 10px 10px;
-        font-weight: bold;
-        cursor: pointer;
-    }
-    #frm-cad-clientes{
-        position: absolute;
-        background-color: #ffffff;
-        top: 50px;
-        height: calc(100% - 50px);
-        width: 100%; 
-    }
+    overflow-x: auto;
+    overflow-y: auto;
+    overflow: auto;
+}
+
+#frm-cad-clientes{
+    position: absolute;
+    height: 0;
+    overflow-x: hidden; /* Esconde o conteúdo que ultrapassa a largura */
+    overflow-y: hidden;
+    overflow: hidden; /* Impede a barra de rolagem dentro do menu */
+    white-space: nowrap; /* Evita que o texto quebre */ 
+    
+}
 
     #frm-cad-clientes label{
         display: block;
@@ -79,15 +85,31 @@
         margin: 5px 0px 2px 0px;
     }
     #frm-cad-clientes input, select{
-        height: 30px;
+        height: 35px;
+        font-size: 18px;
         border: 1px solid #c7c7c7;
         border-radius: 5px;
         width: 100%;
         box-sizing: border-box;
         padding-left: 5px;
     }
+    #frm-cad-clientes textarea{
+        font-size: 18px;
+        border: 1px solid #c7c7c7;
+        border-radius: 5px;
+        width: 100%;
+        box-sizing: border-box;
+        padding-left: 5px; 
+    }
+    #frm-cad-clientes fieldset{
+        box-shadow: 0 4px 8px #00000080;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #c7c7c7;
+        padding: 10px 12px;
+    }
     #genero{
-        height: 26px;
+        height: 35px;
         font-size: 15px;
     }
     #nascimento{
@@ -100,39 +122,17 @@
     }
 
     .frm-estilo{
-        border-radius: 15px;
-        box-shadow: 0 4px 8px #00000080;
-        width: 95%;
-        margin-bottom: 15px;
-        margin: 15px auto;
-  
-    }
-  
-    #dados-cliente, #doc-clientes, #end-clientes{
         display: grid;
         padding: 10px;
     }
-
-    #dados-cliente {
-        display: none;     
-    }
-    #doc-clientes{
-        display: none; 
-    }
-
-    #end-clientes{
-        display: none;
-    }
-    
-    #dados-cliente.open {
-        display: block; /* Exibe o elemento quando a classe 'open' está presente */
-    }
+  
 
     .botoes-clientes{
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 50px;
+        margin-top: 30px;
+        padding-bottom: 90px;
         gap: 20px;
     }
     .botoes-clientes button{
@@ -144,11 +144,11 @@
         cursor: pointer;
     }
 
-    .btn-cliente-salvar{
+    #btn-cliente-salvar{
         background: linear-gradient(90deg, #61CDFC, #DBF2FF, #DBF2FF);
     }
   
-    .btn-cliente-cancelar{
+    #btn-cliente-cancelar{
         background: linear-gradient(90deg, #fc6161, #f7a9a9, #fff6f6);
     }
 
