@@ -13,12 +13,20 @@ botaoMenu.addEventListener('click', () => {
     iconeMenu.src = '../img/open.png'; // Altera para ícone de abrir
   }
 });
+//********************************************************************
 
 
 document.querySelector('.img-refresh').addEventListener('click', () => {
-    // Força o recarregamento da página ignorando o cache
-    window.location.reload(true);
-  });
+  // Força o recarregamento da página ignorando o cache
+  window.location.reload(true);
+});
+//********************************************************************
+
+
+
+
+
+
 
 
 /*

@@ -58,6 +58,99 @@
     .estilo img{
         margin: 0 auto;
     }
+
+    /*formulario cadastrar*/
+    #btn-dados-clientes, #btn-doc-clientes, #btn-end-clientes{
+        padding: 10px 10px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    #frm-cad-clientes{
+        position: absolute;
+        background-color: #ffffff;
+        top: 50px;
+        height: calc(100% - 50px);
+        width: 100%; 
+    }
+
+    #frm-cad-clientes label{
+        display: block;
+        font-size: 15px;
+        margin: 5px 0px 2px 0px;
+    }
+    #frm-cad-clientes input, select{
+        height: 30px;
+        border: 1px solid #c7c7c7;
+        border-radius: 5px;
+        width: 100%;
+        box-sizing: border-box;
+        padding-left: 5px;
+    }
+    #genero{
+        height: 26px;
+        font-size: 15px;
+    }
+    #nascimento{
+        height: 26px;
+        padding: 1px 2px;
+        font-size: 15px;
+    }
+    .espaco{
+        height: 10px;
+    }
+
+    .frm-estilo{
+        border-radius: 15px;
+        box-shadow: 0 4px 8px #00000080;
+        width: 95%;
+        margin-bottom: 15px;
+        margin: 15px auto;
   
+    }
+  
+    #dados-cliente, #doc-clientes, #end-clientes{
+        display: grid;
+        padding: 10px;
+    }
+
+    #dados-cliente {
+        display: none;     
+    }
+    #doc-clientes{
+        display: none; 
+    }
+
+    #end-clientes{
+        display: none;
+    }
+    
+    #dados-cliente.open {
+        display: block; /* Exibe o elemento quando a classe 'open' está presente */
+    }
+
+    .botoes-clientes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+        gap: 20px;
+    }
+    .botoes-clientes button{
+        width: 60%;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .btn-cliente-salvar{
+        background: linear-gradient(90deg, #61CDFC, #DBF2FF, #DBF2FF);
+    }
+  
+    .btn-cliente-cancelar{
+        background: linear-gradient(90deg, #fc6161, #f7a9a9, #fff6f6);
+    }
+
    
 }
