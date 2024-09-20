@@ -1,0 +1,170 @@
+@media(max-width: 500px) {
+
+    .header-forn {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 100%;
+        background: linear-gradient(90deg, #61CDFC, #DBF2FF, #DBF2FF);
+        margin: 0;
+        height: 50px;
+        position: fixed;
+        z-index: 1;
+
+    }
+
+    .header-forn img {
+        margin-right: 10px;
+        margin-left: 15px;
+    }
+
+    .header-forn p {
+        margin: 0;
+        text-align: center;
+        flex: 1;
+        /* Faz o parágrafo ocupar o espaço restante da div */
+        margin-right: 50px;
+        font-size: 1.2rem;
+
+    }
+
+    .flex-forn {
+        padding-top: 80px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 50px;
+        display: grid;
+        gap: 20px;
+
+        background-color: #ffffff;
+        text-align: center;
+    }
+
+    .flex-forn a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .estilo-forn {
+        height: 80px;
+        min-width: 150px;
+        padding: 10px;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        background-color: #ffffff;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px #00000080;
+        align-items: center;
+        cursor: pointer;
+        font-size: 1.2rem;
+    }
+
+    .estilo-forn img {
+        margin: 0 auto;
+    }
+
+    /*formulario forn*/
+    #frm-cad-forn.open {
+        position: absolute;
+        background-color: #ffffff;
+        top: 50px;
+        height: calc(100% - 50px);
+        width: 100%;
+        transition: 0.5s;
+
+        overflow-x: auto;
+        overflow-y: auto;
+        overflow: auto;
+    }
+
+    #frm-cad-forn {
+        position: absolute;
+        height: 0;
+        overflow-x: hidden;
+        /* Esconde o conteúdo que ultrapassa a largura */
+        overflow-y: hidden;
+        overflow: hidden;
+        /* Impede a barra de rolagem dentro do menu */
+        white-space: nowrap;
+        /* Evita que o texto quebre */
+
+    }
+
+    #frm-cad-forn label {
+        display: block;
+        font-size: 15px;
+        margin: 5px 0px 2px 0px;
+    }
+
+    #frm-cad-forn input,
+    select {
+        height: 35px;
+        font-size: 18px;
+        border: 1px solid #c7c7c7;
+        border-radius: 5px;
+        width: 100%;
+        box-sizing: border-box;
+        padding-left: 5px;
+    }
+
+    #frm-cad-forn textarea {
+        font-size: 18px;
+        border: 1px solid #c7c7c7;
+        border-radius: 5px;
+        width: 100%;
+        box-sizing: border-box;
+        padding-left: 5px;
+    }
+
+    #frm-cad-forn fieldset {
+        box-shadow: 0 4px 8px #00000080;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #c7c7c7;
+        padding: 10px 12px;
+    }
+
+    #tipo-forn {
+        height: 35px;
+        font-size: 15px;
+    }
+
+    .espaco-forn {
+        height: 10px;
+    }
+
+    .frm-estilo-forn {
+        display: grid;
+        padding: 10px;
+    }
+
+
+    .botoes-forn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+        padding-bottom: 90px;
+        gap: 20px;
+    }
+
+    .botoes-forn button {
+        width: 60%;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    #btn-forn-salvar {
+        background: linear-gradient(90deg, #61CDFC, #DBF2FF, #DBF2FF);
+    }
+
+    #btn-forn-cancelar {
+        background: linear-gradient(90deg, #fc6161, #f7a9a9, #fff6f6);
+    }
+
+
+}

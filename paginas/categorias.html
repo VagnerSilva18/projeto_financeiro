@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorias</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header class="header-categoria">
+        
+        <a href="./cadastro.html">
+            <img src="../img/voltar.png" alt="img-voltar" width="25">
+        </a>
+        <p>Categorias</p>
+        
+    </header>
+    <div class="flex-categoria">
+    
+    
+        <div class="estilo-categoria" id="btn-open-cat">
+            <img src="../img/mais.png" alt="cadastro" width="30">
+            <p>Cadastrar</p>
+        </div>
+    
+    
+    
+        <div class="estilo-categoria">
+            <img src="../img/loupe.png" alt="Consulta" width="30">
+            <p>Pesquisar</p>
+        </div>
+    
+    
+    
+        <div class="estilo-categoria">
+            <img src="../img/relatorio.png" alt="Relatorio" width="30">
+            <p>Relátorio</p>
+        </div>
+    
+    
+    </div>
+
+
+    <!--formulario categorias-->
+    <form id="frm-cad-cat" action="#">
+    
+        <div class="espaco-cat"></div>
+    
+        <div class="frm-estilo-cat">
+
+            <fieldset>
+                <legend></legend>
+                <label for="nome-cat">Descrição</label>
+                <input type="text" id="nome-cat" name="nome-cat" required>
+            </fieldset>
+    
+        </div>
+
+        <div class="botoes-cat">
+            <button id="btn-cat-salvar">Salvar</button>
+            <button type="button" id="btn-cat-cancelar">Cancelar</button>
+        </div>
+    </form>
+
+    <script>
+        const frm_cad_cat = document.getElementById('frm-cad-cat');
+        const btn_open_cat = document.getElementById('btn-open-cat');
+        const btn_close_cat = document.getElementById('btn-cat-cancelar');
+
+        btn_open_cat.addEventListener('click', () => {
+            frm_cad_cat.classList.toggle('open'); // Alterna a classe 'open'
+            document.getElementById('nome-cat').focus();
+        });
+
+        // Adiciona o evento para o botão de fechar
+        btn_close_cat.addEventListener('click', () => {
+            frm_cad_cat.classList.remove('open'); // Remove a classe 'open'
+        });
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,6 +1,7 @@
-@media(max-width: 500px){
+@media(max-width: 500px) {
 
-    .header-clientes{
+
+    .header-clientes {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -11,22 +12,25 @@
         height: 50px;
         position: fixed;
         z-index: 1;
-        
+
     }
-    .header-clientes img{
+
+    .header-clientes img {
         margin-right: 10px;
         margin-left: 15px;
     }
-    .header-clientes p{
+
+    .header-clientes p {
         margin: 0;
         text-align: center;
-        flex: 1; /* Faz o parágrafo ocupar o espaço restante da div */
+        flex: 1;
+        /* Faz o parágrafo ocupar o espaço restante da div */
         margin-right: 50px;
         font-size: 1.2rem;
-        
+
     }
 
-    .flex-clientes{
+    .flex-clientes {
         padding-top: 80px;
         padding-left: 15px;
         padding-right: 15px;
@@ -35,56 +39,63 @@
         gap: 20px;
 
         background-color: #ffffff;
-        text-align: center; 
+        text-align: center;
     }
-    
-    .estilo{
+
+    .flex-clientes a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .estilo {
         height: 80px;
         min-width: 150px;
         padding: 10px;
         display: grid;
         grid-template-rows: 1fr 1fr;
-        background-color: #ffffff; 
+        background-color: #ffffff;
         border-radius: 15px;
         box-shadow: 0 4px 8px #00000080;
         align-items: center;
         cursor: pointer;
         font-size: 1.2rem;
     }
-    .estilo img{
+
+    .estilo img {
         margin: 0 auto;
     }
-    
-   /*formulario cadastrar*/
-   #frm-cad-clientes.open{
-    position: absolute;
-    background-color: #ffffff;
-    top: 50px;
-    height: calc(100% - 50px);
-    width: 100%; 
-    transition: 0.5s;
 
-    overflow-x: auto;
-    overflow-y: auto;
-    overflow: auto;
-}
+    /*formulario*/
 
-#frm-cad-clientes{
-    position: absolute;
-    height: 0;
-    overflow-x: hidden; /* Esconde o conteúdo que ultrapassa a largura */
-    overflow-y: hidden;
-    overflow: hidden; /* Impede a barra de rolagem dentro do menu */
-    white-space: nowrap; /* Evita que o texto quebre */ 
-    
-}
+    .header-clinte-inserir{
+        display: grid;
+        grid-template-columns: 50px 1fr 50px;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        background: linear-gradient(90deg, #61CDFC, #DBF2FF, #DBF2FF);
+        margin: 0;
+        height: 50px;
+    }
+    .header-clinte-inserir img {
+        margin-right: 10px;
+        margin-left: 15px;
+    }
+    .header-clinte-inserir p{
+        font-size: 1.2rem;
+    }
+    #inserir-cliente {
+        display: grid;   
+    }
 
-    #frm-cad-clientes label{
+    #inserir-cliente label {
         display: block;
         font-size: 15px;
         margin: 5px 0px 2px 0px;
     }
-    #frm-cad-clientes input, select{
+
+    #inserir-cliente input,
+    select {
         height: 35px;
         font-size: 18px;
         border: 1px solid #c7c7c7;
@@ -93,64 +104,78 @@
         box-sizing: border-box;
         padding-left: 5px;
     }
-    #frm-cad-clientes textarea{
+
+    #inserir-cliente textarea {
         font-size: 18px;
         border: 1px solid #c7c7c7;
         border-radius: 5px;
         width: 100%;
         box-sizing: border-box;
-        padding-left: 5px; 
+        padding-left: 5px;
     }
-    #frm-cad-clientes fieldset{
+
+    #inserir-cliente fieldset {
         box-shadow: 0 4px 8px #00000080;
         border-radius: 10px;
         margin-bottom: 10px;
         border: 1px solid #c7c7c7;
         padding: 10px 12px;
     }
-    #genero{
+
+    #genero {
         height: 35px;
         font-size: 15px;
     }
-    #nascimento{
+
+    #nascimento {
         height: 26px;
         padding: 1px 2px;
         font-size: 15px;
     }
-    .espaco{
-        height: 10px;
-    }
 
-    .frm-estilo{
+    .frm-estilo {
         display: grid;
         padding: 10px;
     }
-  
+
 
     .botoes-clientes{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        display: grid;
+        justify-items: center;
+        width: 100%;
         margin-top: 30px;
         padding-bottom: 90px;
         gap: 20px;
     }
-    .botoes-clientes button{
-        width: 60%;
-        padding: 10px;
+    .botoes-clientes a{
+        text-decoration: none;
+        color: black;
+        width: 70%;
+        text-align: center;
+    }
+
+
+    #btn-salvar-cliente {
+        background: linear-gradient(90deg, #61CDFC, #DBF2FF, #DBF2FF);
         border: none;
         border-radius: 10px;
         font-size: 20px;
         cursor: pointer;
+        width: 70%;
+        padding: 10px 0px;
     }
 
-    #btn-cliente-salvar{
-        background: linear-gradient(90deg, #61CDFC, #DBF2FF, #DBF2FF);
-    }
-  
-    #btn-cliente-cancelar{
+    #btn-cancelar-cliente {
         background: linear-gradient(90deg, #fc6161, #f7a9a9, #fff6f6);
+        border: none;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        text-align: center;
+        width: 100%;
+        padding: 10px 0px;
+        
     }
-
    
+
 }
