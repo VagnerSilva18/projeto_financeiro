@@ -58,6 +58,100 @@
     .estilo-dcusto img{
         margin: 0 auto;
     }
+
+    /*formulario*/
+
+    .header-dcusto-inserir{
+        display: grid;
+        grid-template-columns: 50px 1fr 50px;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        background: linear-gradient(90deg, #61CDFC, #DBF2FF, #DBF2FF);
+        margin: 0;
+        height: 50px;
+    }
+    .header-dcusto-inserir img {
+        margin-right: 10px;
+        margin-left: 15px;
+    }
+    .header-dcusto-inserir p{
+        font-size: 1.2rem;
+    }
+    #inserir-dcusto {
+        display: grid;   
+    }
+
+    #inserir-dcusto label {
+        display: block;
+        font-size: 15px;
+        margin: 5px 0px 2px 0px;
+    }
+
+    #inserir-dcusto input,
+    select {
+        height: 35px;
+        font-size: 18px;
+        border: 1px solid #c7c7c7;
+        border-radius: 5px;
+        width: 100%;
+        box-sizing: border-box;
+        padding-left: 5px;
+    }
+
+    #inserir-dcusto textarea {
+        font-size: 18px;
+        border: 1px solid #c7c7c7;
+        border-radius: 5px;
+        width: 100%;
+        box-sizing: border-box;
+        padding-left: 5px;
+    }
+
+    #inserir-dcusto fieldset {
+        box-shadow: 0 4px 8px #00000080;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #c7c7c7;
+        padding: 10px 12px;
+    }
+
+    .frm-estilo {
+        display: grid;
+        padding: 10px;
+    }
+
+
+    .botoes-dcusto{
+        display: grid;
+        justify-items: center;
+        width: 100%;
+        margin-top: 30px;
+        padding-bottom: 90px;
+        gap: 20px;
+    }
+
+    #btn-salvar-dcusto {
+        background: linear-gradient(90deg, #61CDFC, #DBF2FF, #DBF2FF);
+        border: none;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        width: 70%;
+        padding: 10px 0px;
+    }
+
+    #btn-cancelar-dcusto {
+        background: linear-gradient(90deg, #fc6161, #f7a9a9, #fff6f6);
+        border: none;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        text-align: center;
+        width: 70%;
+        padding: 10px 0px;
+        
+    }
   
    
 }

@@ -89,7 +89,13 @@
         <div class="botoes-clientes">
         
             <button id="btn-salvar-cliente">Salvar</button>
-            <a href="../paginas/clientes.html"><button id="btn-cancelar-cliente" type="button">Cancelar</button></a>
+            <button id="btn-cancelar-cliente" type="button">Cancelar</button>
+
+            <script>
+                document.getElementById("btn-cancelar-cliente").addEventListener("click", function () {
+                    window.location.href = "../paginas/clientes.html";
+                });
+            </script>
         </div>
 
     </form> 

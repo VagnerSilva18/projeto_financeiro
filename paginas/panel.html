@@ -98,11 +98,13 @@
 
         </div>
 
-        <div class="block purple">
-
-            <p class="panel-opcao">MAIS OPÇÕES</p>
-
-        </div>
+        <button id="opcao-panel" type="button">Mais Opções</button>
+        <script>
+            document.getElementById('opcao-panel').addEventListener('click', function() {
+                var navMenu = document.querySelector('.nav-menu');
+                navMenu.classList.toggle('open');
+            });
+        </script>
 
     </main>
 

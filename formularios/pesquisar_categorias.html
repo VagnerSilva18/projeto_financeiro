@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisar Categorias</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header class="header-pesquisar-cliente">
+
+        <div class="estilo1-header">
+
+            <div></div>
+            <div id="btn-voltar">
+                <img src="../img/voltar.png" alt="img-voltar" width="25">
+            </div>
+            <script>
+                document.getElementById("btn-voltar").addEventListener("click", function () {
+                    window.location.href = "../paginas/categorias.html";
+                });
+            </script>
+
+            <div>
+                <p>Pesquisar Categorias</p>
+            </div>
+
+
+            <div id="btn-inserir">
+                <img src="../img/add.png" alt="img-novo" width="25">
+            </div>
+            <div></div>
+            <script>
+                document.getElementById("btn-inserir").addEventListener("click", function () {
+                    window.location.href = "./inserir_categorias.html";
+                });
+            </script>
+
+        </div>
+
+        <div class="estilo2-header">
+            <div>
+                <input type="text" name="buscar" placeholder="Pesquisar..." />
+            </div>
+
+            <div id="img-buscar">
+                <img src="../img/loupe.png" alt="Buscar" width="25" />
+            </div>
+
+            <div id="img-novo">
+                <img src="../img/cross.png" alt="limpar" width="25" />
+            </div>
+        </div>
+
+
+
+    </header>
+
+
+</body>
+
+</html>

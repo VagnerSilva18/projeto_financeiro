@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserir Divisão Custo</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header class="header-dcusto-inserir">
+
+        <a href="../paginas/cadastro.html">
+            <img src="../img/voltar.png" alt="img-voltar" width="25">
+        </a>
+        <p>Inserir Divisão Custo</p>
+        <p></p>
+
+    </header>
+
+    <form id="inserir-dcusto" action="#">
+
+        <div class="frm-estilo">
+
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required autofocus>
+
+            <label for="descricao">Descrição</label>
+            <input type="text" id="descricao" name="descricao">
+
+        </div>
+
+        <div class="botoes-dcusto">
+
+            <button id="btn-salvar-dcusto">Salvar</button>
+            <button id="btn-cancelar-dcusto" type="button">Cancelar</button>
+
+            <script>
+                document.getElementById("btn-cancelar-dcusto").addEventListener("click", function () {
+                    window.location.href = "../paginas/divisao_custo.html";
+                });
+            </script>
+        </div>
+
+    </form>
+
+</body>
+
+</html>

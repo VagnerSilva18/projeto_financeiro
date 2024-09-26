@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body class="body-login">
+<body class="estilo-login">
 
     <div class="img-login"><img src="./img/4957136.jpg" alt="imagen-login"></div>
 
-    <form id="frm-login" action="" method="">
+    <form action="" method="#" id="frm-login">
 
         <div class="user-login">
 
@@ -30,20 +30,22 @@
             <img id="padlockIcon" src="./img/cadeado.png" alt="imgpadlock" width="20">
 
             <div id="togglePassword"><img id="eyeIcon" src="./img/close-eye.png" alt="Show Password" width="20"></div>
-            
+
         </div>
 
-        <!--<button id="btnLogin" type="submit">ENTRAR</button>-->
-        <a href="./paginas/panel.html">
-            <div id="btnLogin">
-                ENTRAR
-            </div>
-        </a>
-        
+        <div class="estilo-btn-login"><button type="button" id="btn-login">Entrar</button></div>
+        <!-- primeiro script dentro do <body> -->
+        <script>
+            document.getElementById("btn-login").addEventListener("click", function () {
+                window.location.href = "./paginas/panel.html";
+            });
+        </script>
+
     </form>
 
-    <p><a href="/recuperar-senha">Esqueceu a senha?</a></p>
+    <div class="btn-recuperar"><a href="">Esqueceu a senha?</a></div>
 
+    <!-- segundo script final da página -->
     <script src="./js/script.js"></script>
 
 </body>

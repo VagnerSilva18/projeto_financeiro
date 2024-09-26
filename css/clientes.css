@@ -65,7 +65,7 @@
         margin: 0 auto;
     }
 
-    /*formulario*/
+    /*formulario inserir*/
 
     .header-clinte-inserir{
         display: grid;
@@ -147,13 +147,6 @@
         padding-bottom: 90px;
         gap: 20px;
     }
-    .botoes-clientes a{
-        text-decoration: none;
-        color: black;
-        width: 70%;
-        text-align: center;
-    }
-
 
     #btn-salvar-cliente {
         background: linear-gradient(90deg, #61CDFC, #DBF2FF, #DBF2FF);
@@ -172,10 +165,59 @@
         font-size: 20px;
         cursor: pointer;
         text-align: center;
-        width: 100%;
+        width: 70%;
         padding: 10px 0px;
         
     }
-   
+
+    /*formulario pesquisar*/
+    .header-pesquisar-cliente{
+        height: 100px;
+        background: linear-gradient(90deg, #61CDFC, #DBF2FF, #DBF2FF);
+        display: grid;
+        grid-template-rows: 50px 50px;
+        
+    }
+    .header-pesquisar-cliente p {
+        font-size: 1.2rem;
+    }
+    .estilo1-header{
+        display: grid;
+        grid-template-columns: 10px 25px 1fr 25px 14px;
+        text-align: center;
+        align-items: center;
+    }
+    .estilo2-header{
+        display: grid;
+        position: relative;
+        align-items: center;
+    }
+    .estilo2-header input{
+        height: 35px;
+        font-size: 18px;
+        border: 1px solid #c7c7c7;
+        border-radius: 5px;
+        width: 100%;
+        box-sizing: border-box;
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+    #img-buscar{
+        position: absolute;
+        left: 8px;
+        top: 12px;
+        cursor: pointer;
+    }
+    #img-novo{
+        position: absolute;
+        right: 10px;
+        top: 12px;
+        cursor: pointer;
+    }
+
+    #btn-voltar, #btn-inserir{
+        cursor: pointer;
+    }
+    
 
 }

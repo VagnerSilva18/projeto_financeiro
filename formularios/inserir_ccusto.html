@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserir Centro Custo</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header class="header-ccusto-inserir">
+
+        <a href="../paginas/cadastro.html">
+            <img src="../img/voltar.png" alt="img-voltar" width="25">
+        </a>
+        <p>Inserir Centro Custo</p>
+        <p></p>
+
+    </header>
+
+    <form id="inserir-ccusto" action="#">
+
+        <div class="frm-estilo">
+
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required autofocus>
+
+            <label for="descricao">Descrição</label>
+            <input type="text" id="descricao" name="descricao">
+
+        </div>
+
+        <div class="botoes-ccusto">
+
+            <button id="btn-salvar-ccusto">Salvar</button>
+            <button id="btn-cancelar-ccusto" type="button">Cancelar</button>
+
+            <script>
+                document.getElementById("btn-cancelar-ccusto").addEventListener("click", function () {
+                    window.location.href = "../paginas/centro_custo.html";
+                });
+            </script>
+        </div>
+
+    </form>
+
+</body>
+
+</html>
