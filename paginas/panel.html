@@ -110,7 +110,7 @@
 
     <footer class="panel-footer">
 
-        <div class="img-cadastro"><img src="../img/cadastro.png" alt="img-cad" width="40"></div>
+        <div class="img-cadastro" id="btn-footer-panel"><img src="../img/cadastro.png" alt="img-cad" width="40"></div>
         <div><img src="../img/salvando.png" alt="img-receber" width="40"></div>
         <div><a href="./panel.html"><img src="../img/casa.png" alt="img-home" width="40"></a></div>
         <div><img src="../img/desconto.png" alt="img-pagar" width="40"></div>
@@ -120,6 +120,11 @@
 
     
     <script src="./script-pages.js"></script>
+    <script>
+        document.getElementById("btn-footer-panel").addEventListener("click", function () {
+            window.location.href = "./cadastro.html";
+        });
+    </script>
     
 </body>
 
