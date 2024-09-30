@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body>
+<body class="body-panel">
 
     <header class="panel-header">
 
@@ -20,63 +20,82 @@
             <img src="../img/atualizar.png" alt="imagen-refresh" width="40">
         </div>
 
-        <nav class="nav-menu">
-
-            <ul>
-
-                <div class="nav-top"></div>
-
-                <li class="nav-flex">
-                    <img src="../img/casa.png" alt="img-home" width="40">
-                    <a href="./panel.html">Home</a>
-                </li>
-
-                <li class="nav-flex">
-                    <img src="../img/registration.png" alt="img-cadastro" width="40">
-                    <a href="./cadastro.html">Cadastro</a>
-                </li>
-
-                <li class="nav-flex">
-                    <img src="../img/discount.png" alt="img-despesa" width="40">
-                    <a href="#">Despesas</a>
-                </li>
-
-                <li class="nav-flex">
-                    <img src="../img/saving.png" alt="img-receita" width="40">
-                    <a href="#">Receitas</a>
-                </li>
-
-                <li class="nav-flex">
-                    <img src="../img/relatorio.png" alt="img-relatorio" width="40">
-                    <a href="#">Relátorios</a>
-                </li>
-
-                <li class="nav-flex">
-                    <img src="../img/fluxo-de-caixa.png" alt="img-caixa" width="40">
-                    <a href="#">Fluxo de Caixa</a>
-                </li>
-
-                <li class="nav-flex">
-                    <img src="../img/settings.png" alt="img-config" width="40">
-                    <a href="#">Configurações</a>
-                </li>
-
-                <li class="nav-flex">
-                    <img src="../img/perfil.png" alt="img-perfil" width="40">
-                    <a href="#">Minha Conta</a>
-                </li>
-
-                <li class="nav-flex exit">
-                    <img src="../img/logout.png" alt="img-exit" width="40">
-                    <a href="#">Sair</a>
-                </li>
-
-            </ul>
-        </nav>
-
     </header>
 
+    <nav class="nav-menu">
+
+        <ul>
+
+            <div class="nav-top"></div>
+
+            <li class="nav-flex">
+                <img src="../img/casa.png" alt="img-home" width="40">
+                <a href="./panel.html">Home</a>
+            </li>
+
+            <li class="nav-flex">
+                <img src="../img/registration.png" alt="img-cadastro" width="40">
+                <a href="./cadastro.html">Cadastro</a>
+            </li>
+
+            <li class="nav-flex">
+                <img src="../img/caixa-de-embalagem.png" alt="img-produto" width="40">
+                <a href="#">Produtos</a>
+            </li>
+
+            <li class="nav-flex">
+                <img src="../img/carrinho.png" alt="img-vendas" width="40">
+                <a href="#">Vendas</a>
+            </li>
+
+            <li class="nav-flex">
+                <img src="../img/receita.png" alt="img-financeiro" width="40">
+                <a href="#">Financeiro</a>
+            </li>
+
+            <li class="nav-flex">
+                <img src="../img/fluxo-de-caixa.png" alt="img-caixa" width="40">
+                <a href="#">Controle de Caixa</a>
+            </li>
+
+            <li class="nav-flex">
+                <img src="../img/bank-building.png" alt="img-contas" width="40">
+                <a href="./contas_correntes.html">Conta Corrente</a>
+            </li>
+
+            <li class="nav-flex">
+                <img src="../img/settings.png" alt="img-configurações" width="40">
+                <a href="#">Configurações</a>
+            </li>
+
+            <li class="nav-flex">
+                <img src="../img/relatorio.png" alt="img-relatorio" width="40">
+                <a href="#">Relátorios</a>
+            </li>
+
+            <li class="nav-flex exit">
+                <img src="../img/logout.png" alt="img-exit" width="40">
+                <a href="../index.html">Sair</a>
+            </li>
+
+        </ul>
+    </nav>
+
     <main class="panel-main">
+
+        <div class="block green">
+
+            <p class="panel-nome">VENDAS DE HOJE</p>
+            <p class="panel-valor"><span>R$</span>0,00</p>
+
+        </div>
+
+        <div class="block cinza">
+
+            <p class="panel-nome">ESTOQUE EM BAIXA</p>
+            <p class="panel-valor">15<span class="itens-baixa-nome">ITENS</span><span id="itens-baixa-cor"></span></p>
+
+        </div>
 
         <div class="block blue">
 
@@ -91,14 +110,17 @@
 
         </div>
 
-        <div class="block green">
+        <div class="block blue-claro">
 
             <p class="panel-nome">SALDO</p>
             <p class="panel-valor"><span>R$</span>0,00</p>
 
         </div>
 
-        <button id="opcao-panel" type="button">Mais Opções</button>
+        <div class="block lilas" id="opcao-panel">
+            <p class="panel-nome">MAIS OPÇÕES</p>
+        </div>
+
         <script>
             document.getElementById('opcao-panel').addEventListener('click', function() {
                 var navMenu = document.querySelector('.nav-menu');
@@ -107,6 +129,7 @@
         </script>
 
     </main>
+
 
     <footer class="panel-footer">
 

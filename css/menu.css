@@ -1,48 +1,56 @@
+.nav-menu{
+    position: absolute;
+
+    transition: 0.5s; /* Suaviza a transição ao abrir/fechar */
+    overflow-x: hidden; /* Esconde o conteúdo que ultrapassa a largura */
+    overflow-y: hidden;
+    overflow: hidden; /* Impede a barra de rolagem dentro do menu */
+    white-space: nowrap; /* Evita que o texto quebre */
+    width: 0;
+    left: 0;
+
+    height: calc(100vh - 50px);
+    top: 50px;
+    background: linear-gradient(90deg, #aadef5, #ffffff);
+    
+}
+
+.nav-menu.open{
+    width: 500px;
+    overflow: auto;
+}
+
+.nav-top{
+    height: 30px;
+}
+
+.nav-flex{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+li a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding-left: 15px;
+    width: 100%;
+    color: black;
+}
+.nav-flex:hover{
+    background-color: #7ae0ff77;
+}
+
+.exit{
+    margin-bottom: 90px;
+}
+
 @media(max-width: 500px){
-    .nav-menu{
-        position: absolute;
-
-        transition: 0.5s; /* Suaviza a transição ao abrir/fechar */
-        overflow-x: hidden; /* Esconde o conteúdo que ultrapassa a largura */
-        overflow-y: hidden;
-        overflow: hidden; /* Impede a barra de rolagem dentro do menu */
-        white-space: nowrap; /* Evita que o texto quebre */
-        width: 0;
-
-        height: calc(100vh - 50px);
-        top: 50px;
-        background: linear-gradient(90deg, #aadef5, #ffffff);
-        
-    }
 
     .nav-menu.open{
-        width: 100vw;
+        width: 100%;
         overflow: auto;
     }
-
-    .nav-top{
-        height: 30px;
-    }
-
-    .nav-flex{
-        display: flex;
-        align-items: center;
-        padding-left: 20px;
-        margin-top: 10px;
-    }
-    li a{
-        text-decoration: none;
-        font-size: 1.5rem;
-        padding-left: 15px;
-        width: 100%;
-        color: black;
-    }
-    .nav-flex:hover{
-        background-color: #7ae0ff77;
-    }
-
-    .exit{
-        margin-bottom: 90px;
-    }
+    
 }
 
