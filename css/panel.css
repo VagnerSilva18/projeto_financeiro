@@ -1,13 +1,50 @@
-.body-panel{
+.panel-main {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding-top: 70px;
     display: grid;
-    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+    gap: 10px;
 }
-#btn-menu{
+
+.block {
+    display: grid;
+    align-items: center;
+    height: 100px;
+    border-radius: 30px;
+}
+
+.panel-nome {
+    text-align: left;
+    padding-left: 30px;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.panel-valor {
+    text-align: left;
+    padding-left: 30px;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.panel-valor span {
+    margin-right: 10px;
+}
+
+.panel-footer {
+    display: none;
+}
+
+#btn-menu {
     padding-left: 20px;
     cursor: pointer;
 }
 
-.panel-header{
+.panel-header {
     width: 100%;
     background: linear-gradient(90deg, #61CDFC, #DBF2FF, #DBF2FF);
     margin: 0;
@@ -20,82 +57,39 @@
     align-items: center;
 }
 
-.blue{
-    background: linear-gradient(to right, #2644AE, #86D5F6);
-  }
-  .red{
-    background: linear-gradient(to right, #BA0505, #F99191);
-  }
-  .green{
-    background: linear-gradient(to right, #06741E, #94FD9E);
-  }
-  .cinza{
-      background: linear-gradient(to right, #747474, #cacaca);
-    }
-  .blue-claro{
-      background: linear-gradient(to right, #468cf7, #a7c9fd);  
-  }
-
-  .lilas{
-    background: linear-gradient(to right, #574BE3, #C2BEF8);
+.cor1 {
+    background: linear-gradient(90deg, #3f5efb 0%, #80e3fc 100%);
 }
 
-.img-refresh{
+.cor2 {
+    background: linear-gradient(90deg, #ee0909 0%, #ff8989 100%);
+}
+
+.cor3 {
+    background: linear-gradient(90deg, #119955 0%, #8fffc7 100%);
+}
+
+.cor4 {
+    background: linear-gradient(90deg, #7a45b6 0%, #c797ff 100%);
+}
+
+.img-refresh {
     padding-right: 20px;
     cursor: pointer;
 }
 
-.panel-main{
-    display: grid;
-    box-sizing: border-box;
-    width: 100%;
-    grid-template-columns: 1fr 1fr;
-    margin-bottom: 20px;
-    max-width: 1200px;
-    padding-top: 70px;
-    padding-left: 10px;
-    padding-right: 10px;
+@media (max-width: 1200px) {
+    .panel-main {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
 }
 
-.block{
-    height: 100px;
-    margin: 10px;
-    border-radius: 30px;
-}
+@media (max-width: 700px) {
+    .panel-main {
 
-.panel-nome{
-    text-align: left;
-    padding-top: 15px;
-    padding-left: 20px;
-    color: #ffffff;
-    font-size: 17px;
-}
-
-.panel-valor{
-    text-align: left;
-    padding-top: 15px;
-    padding-left: 20px;
-    color: #ffffff;
-    font-size: 23px;
-}
-
-.panel-valor span{
-    margin-right: 10px;
-}
-
-.panel-footer{
-   display: none;
-}
-
-
-@media (max-width: 500px){
-
-    .panel-main{
-        display: grid;
-        box-sizing: border-box;
-        grid-template-columns: 1fr; 
-        overflow: auto; 
-        margin-bottom: 100px;
+        grid-template-columns: 1fr;
 
     }
 
@@ -125,5 +119,10 @@
     .img-caixa{
         padding-right: 15px;
     }
+}
 
+@media(max-width: 350px){
+    .panel-footer img{
+        width: 30px;
+    }
 }
